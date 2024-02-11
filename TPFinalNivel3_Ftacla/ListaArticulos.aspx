@@ -62,7 +62,7 @@
         AllowPaging="True" PageSize="3">
         <Columns>
             <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
-            <asp:BoundField HeaderText="Precio" DataField="Precio" />
+            <asp:BoundField HeaderText="Precio" DataField="Precio" DataFormatString="{0:F2}" />
             <asp:BoundField HeaderText="Marca" DataField="DescripcionM" />
           <asp:CommandField HeaderText="Acción" ShowSelectButton="true" SelectText="✍"/>  
           

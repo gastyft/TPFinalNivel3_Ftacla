@@ -65,7 +65,8 @@ namespace TPFinalNivel3_Ftacla
                                     DescripcionArticulo.Text = reader["Descripcion_Articulo"].ToString();
                                     DescripcionMarca.Text = reader["Descripcion_Marca"].ToString();
                                     DescripcionCate.Text = reader["Descripcion_Categoria"].ToString();
-
+                                    Precio.Text = Convert.ToDecimal(reader["Precio"]).ToString("0.00");
+                                    Codigo.Text = reader["Codigo"].ToString();
                                     ImagenArti.ImageUrl= ImagenArti1;
                                 }
                                 else

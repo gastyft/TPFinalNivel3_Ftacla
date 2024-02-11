@@ -35,6 +35,7 @@ namespace TPFinalNivel3_Ftacla
             dgvArticulo.DataSource = Session["listaArticulos"];
             dgvArticulo.DataBind();
         }
+
         protected void dgvArticulo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string id = dgvArticulo.SelectedDataKey.Value.ToString();

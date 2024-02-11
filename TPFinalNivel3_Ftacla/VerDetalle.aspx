@@ -17,5 +17,13 @@
         Categoria:
         <asp:Label ID="DescripcionCate" runat="server" Text="Label" font-size="XX-Large"></asp:Label>
     </h5>
+    <h5>
+        Precio:
+        <asp:Label ID="Precio" runat="server" Text="Label" font-size="XX-Large"></asp:Label>
+    </h5>
+    <h5>
+        Codigo:
+        <asp:Label ID="Codigo" runat="server" Text="Label" font-size="XX-Large"></asp:Label>
+    </h5>
 
 </asp:Content>
