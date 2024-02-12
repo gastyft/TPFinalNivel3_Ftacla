@@ -16,8 +16,9 @@
                 <div class="card">
                     <img src="<%#Eval("Imagen") %>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><%#Eval("Nombre") %></h5>
+                        <h3 class="card-title"><%#Eval("Nombre") %></h3>
                         <p class="card-text"><%#Eval("Descripcion") %></p>
+                        <h4 class="card-text"> <bold>$<%#((decimal)Eval("Precio")).ToString("F2")%> </bold></h4>
                         <a class="btn btn-info" href="VerDetalle.aspx?id=<%#Eval("Id") %>">Ver Detalle</a>
                         <a class="btn btn-info" href="FormularioArticulo.aspx?id=<%#Eval("Id") %>">Editar</a>
   <!-- BOTON EJEMPLO CON ASP   <asp:button text="Ejemplo" cssclass="btn btn-primary" runat="server" id="btnEjemplo" CommandArgument='<%#Eval("Id") %>' CommandName="PokemonId" OnClick="btnEjemplo_Click"/> -->

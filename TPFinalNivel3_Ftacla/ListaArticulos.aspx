@@ -59,7 +59,7 @@
         CssClass="table table-striped table-bordered" AutoGenerateColumns="false"
         OnSelectedIndexChanged="dgvArticulo_SelectedIndexChanged"
         OnPageIndexChanging="dgvArticulo_PageIndexChanging"
-        AllowPaging="True" PageSize="3">
+        AllowPaging="True" PageSize="10">
         <Columns>
             <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
             <asp:BoundField HeaderText="Precio" DataField="Precio" DataFormatString="{0:F2}" />

@@ -12,6 +12,7 @@ using System.Data.SqlTypes;
 using System.ComponentModel;
 using System.Xml.Linq;
 using System.Collections;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Negocio
 {
@@ -366,6 +367,7 @@ namespace Negocio
             }
             catch (Exception ex)
             {
+                
                 throw ex;
             }
         }
