@@ -56,10 +56,28 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="ListaArticulos.aspx">Buscar</a></li>
+                       <% if ( Negocio.Seguridad.esAdmin(Session["usuario"])) { %>
+    <li class="nav-item"><a class="nav-link" runat="server" href="ListaArticulos.aspx">ListaArticulos/Busqueda</a></li>
+<% } %>
                     </ul>
                 </div>
-         
+           
+         <div class="d-flex">
+             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex">
+
+               <% if (Session["usuario"] != null) { %>
+            <li class="nav-item">
+                <asp:LinkButton ID="btnLogout" CSSClass="btn btn-danger me-2" runat="server" OnClick="btnLogout_Click" >LogOut</asp:LinkButton>
+            </li>
+        <% } else { %>
+            <li class="nav-item" id="Login">
+                <a class="btn btn-success me-2" runat="server"   href="Login.aspx">Login</a>
+             
+        <% } %>
+                </ul>
+          </div>
+         </div>
             </div>
         </nav>
         <div class="container body-content">

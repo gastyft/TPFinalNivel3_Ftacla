@@ -13,7 +13,7 @@ namespace TPFinalNivel3_Ftacla
         public bool FiltroAvanzado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-     
+           
 
             FiltroAvanzado = chkAvanzado.Checked;
             if (!IsPostBack)
