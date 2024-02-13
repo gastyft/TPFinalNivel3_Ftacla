@@ -1,0 +1,6 @@
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\bin\Release\dominio.dll
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\bin\Release\dominio.pdb
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\obj\Release\Dominio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\obj\Release\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\obj\Release\dominio.dll
+C:\Users\Usuario\Desktop\C#\TPFinalNivel3_Ftacla\dominio\obj\Release\dominio.pdb

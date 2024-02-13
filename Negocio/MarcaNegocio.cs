@@ -18,7 +18,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT [Id],[Descripcion] FROM [CATALOGO_DB].[dbo].[MARCAS]"); ///Query datebase de consulta
+                datos.setearConsulta("SELECT [Id],[Descripcion] FROM [CATALOGO_WEB_DB].[dbo].[MARCAS]"); ///Query datebase de consulta
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())

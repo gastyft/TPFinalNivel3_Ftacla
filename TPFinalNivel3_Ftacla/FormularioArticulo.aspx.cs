@@ -18,6 +18,11 @@ namespace TPFinalNivel3_Ftacla
         public bool ConfirmaEliminacion { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!(Page is Login))
+            {
+                if (!Seguridad.sesionActiva(Session["usuario"])) /// SI O SI TE OBLIGA A LOGUEAR PARA VER TODO
+                    Response.Redirect("Default.aspx", false);
+            }
             txtId.Enabled = false;
             ConfirmaEliminacion = false;
             try
