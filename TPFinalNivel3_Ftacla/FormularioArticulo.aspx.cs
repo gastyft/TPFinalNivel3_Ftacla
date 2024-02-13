@@ -140,14 +140,14 @@ namespace TPFinalNivel3_Ftacla
                    ArticuloNegocio negocio = new ArticuloNegocio();
                     negocio.eliminar(int.Parse(txtId.Text));
                  
-                    Response.Redirect("Default.aspx");
                 }
+                    Response.Redirect("Default.aspx");
             }
             catch (Exception ex)
             {
                   Session.Add("error", ex.ToString());
-                 Response.Redirect("Error.aspx");
-                 
+                Response.Redirect("Default.aspx");
+
             }
         }
 
