@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VerDetalle.aspx.cs" Inherits="TPFinalNivel3_Ftacla.VerDetalle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+ <div class="card mb-3">
         <asp:Image ID="ImagenArti" AlternateText="Imagen del articulo" runat="server" />
+  <div class="card-body">
    <h5> <bold>Nombre del articulo:</bold> 
     <asp:Label ID="lblNombre" runat="server" Text="lblNombre.nombre" font-size="XX-Large"></asp:Label>
        </h5>
@@ -26,4 +28,7 @@
         <asp:Label ID="Codigo" runat="server" Text="Label" font-size="XX-Large"></asp:Label>
     </h5>
 
+  </div>
+</div>
 </asp:Content>
+
